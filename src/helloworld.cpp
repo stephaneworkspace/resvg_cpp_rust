@@ -6,10 +6,11 @@
 
 string HelloWorld::helloWorld() {
     string s("Hello World");
+    hello();
     return s;
 }
 
 
-//int HelloWorld::mult(int x) {
-//    return mul(x);
-//}
+int HelloWorld::mult(int x) {
+    return mul(x);
+}

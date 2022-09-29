@@ -413,4 +413,5 @@ CMakeFiles/essai.dir/essai.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/stephane/Code/CL/C++/resvg/essai/../include/helloworld.h
+  /Users/stephane/Code/CL/C++/resvg/essai/../include/helloworld.h \
+  /Users/stephane/Code/CL/C++/resvg/essai/../include/../libresvg.h

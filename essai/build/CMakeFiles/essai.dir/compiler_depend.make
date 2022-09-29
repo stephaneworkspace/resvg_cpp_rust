@@ -415,7 +415,8 @@ CMakeFiles/essai.dir/essai.cpp.o: ../essai.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/stephane/Code/CL/C++/resvg/include/helloworld.h
+  /Users/stephane/Code/CL/C++/resvg/include/helloworld.h \
+  /Users/stephane/Code/CL/C++/resvg/libresvg.h
 
 
 /Users/stephane/Code/CL/C++/resvg/include/helloworld.h:
@@ -731,6 +732,8 @@ CMakeFiles/essai.dir/essai.cpp.o: ../essai.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/find_end.h:
+
+/Users/stephane/Code/CL/C++/resvg/libresvg.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
 
