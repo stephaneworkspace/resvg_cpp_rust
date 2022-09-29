@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.22)
+project(essai)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_definitions(-Wall)
+set(DEBUG)
+if (DEFINED DEBUG)
+    add_definitions(-g)
+endif()
+if (DEFINED RELEASE)
+    add_definitions(-O3)
+endif()
+
+set (CMAKE_CXX_FLAGS "-fobjc-abi-version=2 -fobjc-arc ${CMAKE_CXX_FLAGS}")
+include_directories(../include)
+file(GLOB SOURCES "*.cpp")
+add_executable(essai essai.cpp)
+TARGET_LINK_LIBRARIES(essai ${CMAKE_SOURCE_DIR}/../build/libresvg.a)
