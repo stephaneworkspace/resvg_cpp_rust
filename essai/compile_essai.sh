@@ -1,5 +1,10 @@
-clang++ -Wall -std=c++20 essai.cpp -o essai.o -shared ../resvg
-
+#!/bin/sh
+clang++ -Wall -std=c++20 essai.cpp -o essai.o -shared libresvg.a
+ar -t libresvg.a
+llvm-ar rc essai.a essai.o libresvg.a
+ar -t essai.a
+chmod +x essai.a
+./essai.a
 #clang++ \
 #  -c \
 #  -Wall \

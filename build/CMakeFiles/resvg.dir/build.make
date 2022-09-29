@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/stephane/Code/CL/C++/resvg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/stephane/Code/CL/C++/resvg
+CMAKE_BINARY_DIR = /Users/stephane/Code/CL/C++/resvg/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/resvg.dir/depend.make
@@ -70,9 +70,9 @@ include CMakeFiles/resvg.dir/progress.make
 include CMakeFiles/resvg.dir/flags.make
 
 CMakeFiles/resvg.dir/src/helloworld.cpp.o: CMakeFiles/resvg.dir/flags.make
-CMakeFiles/resvg.dir/src/helloworld.cpp.o: src/helloworld.cpp
+CMakeFiles/resvg.dir/src/helloworld.cpp.o: ../src/helloworld.cpp
 CMakeFiles/resvg.dir/src/helloworld.cpp.o: CMakeFiles/resvg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/stephane/Code/CL/C++/resvg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/resvg.dir/src/helloworld.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/stephane/Code/CL/C++/resvg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/resvg.dir/src/helloworld.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/resvg.dir/src/helloworld.cpp.o -MF CMakeFiles/resvg.dir/src/helloworld.cpp.o.d -o CMakeFiles/resvg.dir/src/helloworld.cpp.o -c /Users/stephane/Code/CL/C++/resvg/src/helloworld.cpp
 
 CMakeFiles/resvg.dir/src/helloworld.cpp.i: cmake_force
@@ -93,7 +93,7 @@ resvg_EXTERNAL_OBJECTS =
 libresvg.a: CMakeFiles/resvg.dir/src/helloworld.cpp.o
 libresvg.a: CMakeFiles/resvg.dir/build.make
 libresvg.a: CMakeFiles/resvg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/stephane/Code/CL/C++/resvg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libresvg.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/stephane/Code/CL/C++/resvg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libresvg.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/resvg.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/resvg.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/resvg.dir/clean:
 .PHONY : CMakeFiles/resvg.dir/clean
 
 CMakeFiles/resvg.dir/depend:
-	cd /Users/stephane/Code/CL/C++/resvg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/stephane/Code/CL/C++/resvg /Users/stephane/Code/CL/C++/resvg /Users/stephane/Code/CL/C++/resvg /Users/stephane/Code/CL/C++/resvg /Users/stephane/Code/CL/C++/resvg/CMakeFiles/resvg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/stephane/Code/CL/C++/resvg/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/stephane/Code/CL/C++/resvg /Users/stephane/Code/CL/C++/resvg /Users/stephane/Code/CL/C++/resvg/build /Users/stephane/Code/CL/C++/resvg/build /Users/stephane/Code/CL/C++/resvg/build/CMakeFiles/resvg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/resvg.dir/depend
 

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
-#project(resvg)
-project(resvg CXX C)
+project(resvg)
+#project(resvg CXX C)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -24,12 +24,10 @@ set (CMAKE_CXX_FLAGS "-fobjc-abi-version=2 -fobjc-arc ${CMAKE_CXX_FLAGS}")
 
 #add_library(libresvg SHARED IMPORTED helloworld.cpp helloworld.h)
 
-#add_library(resvg STATIC lib/include/src/helloworld.h lib/include/src/helloworld.cpp)
-
 #set_target_properties(libresvg
 #        PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/rust/resvg/target/release/libresvg.dylib)
 
-#set_target_properties(resvg
+#set_target_properties(libresvg
 #        PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/rust/libresvg.a)
 
 #set_target_properties(libresvg
@@ -37,8 +35,17 @@ set (CMAKE_CXX_FLAGS "-fobjc-abi-version=2 -fobjc-arc ${CMAKE_CXX_FLAGS}")
 #target_include_directories(libresvg
 #        INTERFACE ${CMAKE_SOURCE_DIR}/lib)
 
-add_executable(resvg main.cpp libresvg.h)
+include_directories(include)
+file(GLOB SOURCES "src/*.cpp")
+add_library(resvg STATIC ${SOURCES})
+
+#add_executable(resvg main.cpp libresvg.h)
+
+#include_directories(lib)
+#target_include_directories(resvg PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 TARGET_LINK_LIBRARIES(resvg ${CMAKE_SOURCE_DIR}/rust/libresvg.a)
+
+# https://gitlab.com/Fraser999/Rust-From-CXX/-/blob/master/CMakeLists.txt
 
 #SET(APP_EXE StaticLib)
 #ADD_EXECUTABLE( ${APP_EXE}

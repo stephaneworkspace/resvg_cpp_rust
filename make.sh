@@ -16,7 +16,9 @@
 #ccmake .
 #cmake -DCMAKE_BUILD_TYPE=Release ..
 #cmake --build .
-cmake .
+cmake . -B build
+cd build
 make
-chmod +x resvg
-./resvg
+#make
+#chmod +x resvg
+#./resvg
