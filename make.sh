@@ -16,6 +16,8 @@
 #ccmake .
 #cmake -DCMAKE_BUILD_TYPE=Release ..
 #cmake --build .
+rm -rf build
+mkdir build
 cmake . -B build
 cd build
 make

@@ -1,8 +1,11 @@
 cmake_minimum_required(VERSION 3.22)
 project(resvg)
 #project(resvg CXX C)
-
 set(CMAKE_CXX_STANDARD 20)
+
+option(WITH_IOS "Option description" OFF)
+option(WITH_MACOS "Option description" ON)
+
 
 if (DEFINED PLATFORM)
     include(toolchains/ios.cmake)
@@ -17,10 +20,11 @@ if (DEFINED RELEASE)
     add_definitions(-O3)
 endif()
 
-#SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -arch armv7")
-#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -arch armv7")
-
-set (CMAKE_CXX_FLAGS "-fobjc-abi-version=2 -fobjc-arc ${CMAKE_CXX_FLAGS}")
+IF (WITH_IOS)
+    #SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -arch armv7")
+    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -arch armv7")
+    set(CMAKE_CXX_FLAGS "-fobjc-abi-version=2 -fobjc-arc ${CMAKE_CXX_FLAGS}")
+endif()
 
 #add_library(libresvg SHARED IMPORTED helloworld.cpp helloworld.h)
 
@@ -38,14 +42,15 @@ set (CMAKE_CXX_FLAGS "-fobjc-abi-version=2 -fobjc-arc ${CMAKE_CXX_FLAGS}")
 include_directories(include)
 file(GLOB SOURCES "src/*.cpp")
 add_library(resvg STATIC ${SOURCES})
-#add_library(resvg STATIC ${SOURCES})
 
 #add_executable(resvg main.cpp libresvg.h)
 
-#include_directories(lib)
-#target_include_directories(resvg PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-TARGET_LINK_LIBRARIES(resvg ${CMAKE_SOURCE_DIR}/rust/libresvg.a)
-
+IF (WITH_IOS)
+    TARGET_LINK_LIBRARIES(resvg ${CMAKE_SOURCE_DIR}/rust/libresvgIos.a)
+endif()
+IF (WITH_MACOS)
+    TARGET_LINK_LIBRARIES(resvg ${CMAKE_SOURCE_DIR}/rust/libresvg.a)
+endif()
 # https://gitlab.com/Fraser999/Rust-From-CXX/-/blob/master/CMakeLists.txt
 
 #SET(APP_EXE StaticLib)

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/stephane/Code/CL/C++/resvg/essai/../include
 
-CXX_FLAGS = -fobjc-abi-version=2 -fobjc-arc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -Wall -std=gnu++2a
+CXX_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -Wall -std=gnu++2a
 
