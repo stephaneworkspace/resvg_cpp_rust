@@ -21,6 +21,8 @@ mkdir build
 cmake . -B build
 cd build
 make
+cp libresvg.a ../essai/libresvg.a
+
 #make
 #chmod +x resvg
 #./resvg

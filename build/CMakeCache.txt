@@ -201,6 +201,9 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip
 
+//The CMake toolchain file
+CMAKE_TOOLCHAIN_FILE:FILEPATH=/Users/stephane/Code/CL/C++/resvg/toolchains/ios.cmake
+
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -208,10 +211,10 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcode
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Option description
-WITH_IOS:BOOL=OFF
+WITH_IOS:BOOL=ON
 
 //Option description
-WITH_MACOS:BOOL=ON
+WITH_MACOS:BOOL=OFF
 
 //Value Computed by CMake
 resvg_BINARY_DIR:STATIC=/Users/stephane/Code/CL/C++/resvg/build

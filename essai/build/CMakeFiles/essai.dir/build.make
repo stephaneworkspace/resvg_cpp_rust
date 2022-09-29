@@ -92,7 +92,7 @@ essai_EXTERNAL_OBJECTS =
 
 essai: CMakeFiles/essai.dir/essai.cpp.o
 essai: CMakeFiles/essai.dir/build.make
-essai: ../../build/libresvg.a
+essai: ../libresvg.a
 essai: ../../rust/libresvg.a
 essai: CMakeFiles/essai.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/stephane/Code/CL/C++/resvg/essai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable essai"
