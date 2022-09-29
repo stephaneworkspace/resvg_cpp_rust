@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=${exec_prefix}/
+includedir=${prefix}/
+
+Name: resvg
+Description: 
+Version: 
+
+Requires:
+Libs: -L${libdir} -lresvg
+Cflags: -I${includedir}

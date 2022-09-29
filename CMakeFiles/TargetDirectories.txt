@@ -1,0 +1,3 @@
+/Users/stephane/Code/CL/C++/resvg/CMakeFiles/resvg.dir
+/Users/stephane/Code/CL/C++/resvg/CMakeFiles/edit_cache.dir
+/Users/stephane/Code/CL/C++/resvg/CMakeFiles/rebuild_cache.dir
