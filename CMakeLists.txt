@@ -21,7 +21,7 @@ if (DEFINED RELEASE)
 endif()
 
 IF (WITH_IOS)
-    #SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -arch armv7")
+    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -arch armv7")
     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -arch armv7")
     set(CMAKE_CXX_FLAGS "-fobjc-abi-version=2 -fobjc-arc ${CMAKE_CXX_FLAGS}")
 endif()
